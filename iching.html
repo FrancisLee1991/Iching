@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="semantic.css">
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="semantic.js"></script>
+	
+<title>簡易易經行動預測</title>
+
+	<script type="text/javascript">
+		function toanswer(){
+			$("#answer").html("great");
+		}
+	</script>
+</head>
+<body>
+	<h2 class="ui center aligned icon header">
+	  <i class="circular settings icon"></i>
+	  讓我們開始預測結果吧
+	</h2>
+	<div style="width:50%;position:relative;margin-left:25%;margin-right:25%">
+		<div class="ui segment">
+		  <a class="ui ribbon label">第一步</a>
+		  <p style="text-align:center;">請靜下心來思考問題</p>
+		</div>
+		<div class="ui segment" style="text-align:center;">
+		  <a class="ui ribbon label" style="position:relative;float:left;">第二步</a>
+		  <div class="ui button" onclick="toanswer()">
+		  請點擊我
+			</div>
+		</div>
+		<div class="ui segment" id="result">
+		  <a class="ui ribbon label">結論</a>
+		  <p id="answer"></p>
+		  <div class="ui divider"></div>
+		  <p id="means"></p>
+		</div>
+	</div>
+</body>
+</html>
